@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Project Documentation: Hackernews Search
+## Building the project
+ ### Prerequisites
+ a)NodeJs
+ b)npm
+ c) VSCode
+  Follow the following instructions:
+  1. In the VSCode terminal type **npx create-react-app app-name** to create a new react project in the respective folder.
+  2. After creating the project, follow the below steps to create a react web application to search hacker news.
+## 1. Introduction
+The Hackernews Search project is a React application that allows users to search and explore posts on Hacker News. Leveraging the Hacker News API, the application provides a user-friendly interface for searching, viewing search results, and exploring detailed information about individual posts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 2. Project Overview
+The project consists of a single-page application built with React and styled using Styled Components and Material-UI. Users can enter search queries, view search results, and click on individual posts to see detailed information.
 
-## Available Scripts
+## 3. Technologies Used
+1. React
+2. Axios
+3. Styled Components
+4. Material-UI
+   
+## 4. Project Structure
+The project follows a standard React project structure:
+/src
+  /components
+    - App.js
+    - SearchBar.jsx
+    - SearchResults.jsx
+    - PostDetail.js
+  App.js
+  App.css
+  App.test.js
+  
+## 5. Components Overview
+### a) App.js
+The main component responsible for rendering the application structure. It manages the state for search results and the selected post.
 
-In the project directory, you can run:
+### b) SearchBar.jsx
+A component handling user input for searching Hacker News. It communicates with the Hacker News API through the api.js utility.
 
-### `npm start`
+### c) SearchResults.jsx
+Displays the search results and handles item clicks to show detailed information about a selected post.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### d) PostDetail.jsx
+Displays detailed information about a selected post, including the post title, points, comments, and comment details.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 6. Styling Overview
+1. Global Styles
+Global styles, including a fade-in animation and a light gray background, are applied using the GlobalStyles.js file.
 
-### `npm test`
+2. Component Styles
+Each component has its own styled-components, defining specific styles for elements within that component.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 7. API Integration
+The project uses Axios to interact with the Hacker News API. The api.js utility contains functions for making API requests.
 
-### `npm run build`
+## 8. Functionality
+1. Searching Hacker News
+Users can enter search queries in the search bar, triggering a call to the Hacker News API to retrieve relevant posts. Results are displayed in the SearchResults component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Viewing Post Details
+Clicking on a post in the search results displays detailed information in the PostDetail component, including the post title, points, comments, and comment details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 9. Running the Project
+1. Clone the repository: git clone https://github.com/your-username/hackernews-search.git
+2. Install dependencies: npm install
+3. Start the development server: npm start
+   
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
