@@ -36,10 +36,10 @@ The project follows a standard React project structure:
   
 ## 5. Components Overview
 ### a) App.js
-The main component responsible for rendering the application structure. It manages the state for search results and the selected post.
+The main component is responsible for rendering the application structure. It manages the state for search results and the selected post.
 
 ### b) SearchBar.jsx
-A component handling user input for searching Hacker News. It communicates with the Hacker News API through the api.js utility.
+A component handling user input for searching Hacker News. It communicates with the Hacker News API by using axios.
 
 ### c) SearchResults.jsx
 Displays the search results and handles item clicks to show detailed information about a selected post.
@@ -52,7 +52,7 @@ Displays detailed information about a selected post, including the post title, p
 Global styles, including a fade-in animation and a light gray background, are applied using the GlobalStyles.js file.
 
 2. Component Styles
-Each component has its own styled-components, defining specific styles for elements within that component.
+Each component has its styled-components, defining specific styles for elements within that component.
 
 ## 7. API Integration
 The project uses Axios to interact with the Hacker News API. The api.js utility contains functions for making API requests.
@@ -63,6 +63,8 @@ Users can enter search queries in the search bar, triggering a call to the Hacke
 
 2. Viewing Post Details
 Clicking on a post in the search results displays detailed information in the PostDetail component, including the post title, points, comments, and comment details.
+
+3. By clicking on Hackernews you can refresh the content below the search bar.
 
 ## 9. Running the Project
 1. Clone the repository: git clone https://github.com/your-username/hackernews-search.git
