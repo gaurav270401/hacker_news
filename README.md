@@ -1,8 +1,9 @@
 # Project Documentation: Hackernews Search
 ## Building the project
  ### Prerequisites
- a)NodeJs
- b)npm
+ a) NodeJs
+ 
+ b) npm
  c) VSCode
   Follow the following instructions:
   1. In the VSCode terminal type **npx create-react-app app-name** to create a new react project in the respective folder.
