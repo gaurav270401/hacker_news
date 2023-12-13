@@ -4,7 +4,9 @@
  a) NodeJs
  
  b) npm
+ 
  c) VSCode
+ 
   Follow the following instructions:
   1. In the VSCode terminal type **npx create-react-app app-name** to create a new react project in the respective folder.
   2. After creating the project, follow the below steps to create a react web application to search hacker news.
